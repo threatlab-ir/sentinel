@@ -1,5 +1,9 @@
 # sentinel
 
+<p align="center">
+  <img src="docs/architecture.svg" alt="sentinel architecture: eBPF agents stream exec events to sentinel-server, which feeds the fleet dashboard and Telegram alerts" width="100%">
+</p>
+
 An eBPF-based Linux runtime security system written in Rust, using
 [aya](https://aya-rs.dev/). Built toward the kind of agent described in
 Exein's Linux Security Engineer job posting: kernel-level visibility into
