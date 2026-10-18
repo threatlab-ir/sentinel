@@ -1,0 +1,10 @@
+/target/
+**/target/
+sentinel-ebpf/target/
+
+*.db
+*.db-shm
+*.db-wal
+
+# local scratch, never anything a real deployment needs
+agent-id

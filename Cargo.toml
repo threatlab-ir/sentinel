@@ -1,0 +1,7 @@
+[workspace]
+resolver = "2"
+members = ["sentinel", "sentinel-common", "sentinel-server"]
+exclude = ["sentinel-ebpf"]
+
+[workspace.package]
+edition = "2021"

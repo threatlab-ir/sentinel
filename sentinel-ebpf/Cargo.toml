@@ -1,0 +1,20 @@
+[package]
+name = "sentinel-ebpf"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+aya-ebpf = { version = "0.1" }
+sentinel-common = { path = "../sentinel-common" }
+
+[[bin]]
+name = "sentinel"
+path = "src/main.rs"
+
+[profile.release]
+lto = true
+panic = "abort"
+codegen-units = 1
+
+[workspace]
+members = []
